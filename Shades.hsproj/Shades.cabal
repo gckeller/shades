@@ -1,0 +1,31 @@
+name: Shades
+version: 1.0
+cabal-version: 1.11
+build-type: Simple
+license: BSD2
+stability: experimental
+synopsis: SpriteKit sample game
+category: Games
+author: Gabriele Keller
+data-files:
+    blue1.png
+    blue4.png
+    blue5.png
+    blue2.png
+    blue3.png
+x-ghc-framework-version: 7.10.3-6.29-1
+x-last-ide-version: HfM1.4.0
+Executable Shades
+  main-is: Shades.hs
+  buildable: True
+  build-depends:
+      base -any,
+      containers -any,
+      spritekit -any,
+      random -any
+  other-modules:
+      GameState
+      Constants
+      Random
+      Actions
+      Convenience

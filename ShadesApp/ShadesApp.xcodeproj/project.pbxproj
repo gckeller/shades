@@ -1,0 +1,363 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E70E492B1F320020008A2CCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70E492A1F320020008A2CCF /* AppDelegate.swift */; };
+		E70E492D1F320020008A2CCF /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = E70E492C1F320020008A2CCF /* GameScene.sks */; };
+		E70E492F1F320020008A2CCF /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = E70E492E1F320020008A2CCF /* Actions.sks */; };
+		E70E49311F320020008A2CCF /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70E49301F320020008A2CCF /* GameScene.swift */; };
+		E70E49331F320020008A2CCF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70E49321F320020008A2CCF /* ViewController.swift */; };
+		E70E49351F320020008A2CCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E70E49341F320020008A2CCF /* Assets.xcassets */; };
+		E70E49381F320020008A2CCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E70E49361F320020008A2CCF /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E70E49271F320020008A2CCF /* ShadesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShadesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E70E492A1F320020008A2CCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E70E492C1F320020008A2CCF /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		E70E492E1F320020008A2CCF /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		E70E49301F320020008A2CCF /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		E70E49321F320020008A2CCF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E70E49341F320020008A2CCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E70E49371F320020008A2CCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E70E49391F320020008A2CCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E70E49431F39EC6C008A2CCF /* HaskellSpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HaskellSpriteKit.framework; path = "/Applications/Xcode.app/Contents/Developer/../../../../Users/chak/Library/Developer/Xcode/DerivedData/HaskellSpriteKit-aapnurekzprlwrevpovflktmewse/Build/Intermediates/ArchiveIntermediates/HaskellSpriteKit/IntermediateBuildFilesPath/UninstalledProducts/macosx/HaskellSpriteKit.framework"; sourceTree = "<absolute>"; };
+		E78B99E61F3B379B002428A2 /* BuildHaskell.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = BuildHaskell.sh; sourceTree = "<group>"; };
+		E7962EEC1F405D7A00FD7870 /* CopyHaskellDylibs.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = CopyHaskellDylibs.sh; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E70E49241F320020008A2CCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E70E491E1F320020008A2CCF = {
+			isa = PBXGroup;
+			children = (
+				E70E49291F320020008A2CCF /* ShadesApp */,
+				E70E49281F320020008A2CCF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E70E49281F320020008A2CCF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E70E49271F320020008A2CCF /* ShadesApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E70E49291F320020008A2CCF /* ShadesApp */ = {
+			isa = PBXGroup;
+			children = (
+				E70E49431F39EC6C008A2CCF /* HaskellSpriteKit.framework */,
+				E70E492A1F320020008A2CCF /* AppDelegate.swift */,
+				E70E492C1F320020008A2CCF /* GameScene.sks */,
+				E70E492E1F320020008A2CCF /* Actions.sks */,
+				E70E49301F320020008A2CCF /* GameScene.swift */,
+				E70E49321F320020008A2CCF /* ViewController.swift */,
+				E70E49341F320020008A2CCF /* Assets.xcassets */,
+				E70E49361F320020008A2CCF /* Main.storyboard */,
+				E70E49391F320020008A2CCF /* Info.plist */,
+				E78B99E51F3B3766002428A2 /* Scripts */,
+			);
+			path = ShadesApp;
+			sourceTree = "<group>";
+		};
+		E78B99E51F3B3766002428A2 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				E78B99E61F3B379B002428A2 /* BuildHaskell.sh */,
+				E7962EEC1F405D7A00FD7870 /* CopyHaskellDylibs.sh */,
+			);
+			name = Scripts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E70E49261F320020008A2CCF /* ShadesApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E70E493C1F320020008A2CCF /* Build configuration list for PBXNativeTarget "ShadesApp" */;
+			buildPhases = (
+				E78B99E41F3B3747002428A2 /* Build Haskell Code */,
+				E70E49231F320020008A2CCF /* Sources */,
+				E70E49241F320020008A2CCF /* Frameworks */,
+				E70E49251F320020008A2CCF /* Resources */,
+				E7962EEB1F40474D00FD7870 /* Copy Haskell dylibs */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShadesApp;
+			productName = ShadesApp;
+			productReference = E70E49271F320020008A2CCF /* ShadesApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E70E491F1F320020008A2CCF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Manuel M T Chakravarty";
+				TargetAttributes = {
+					E70E49261F320020008A2CCF = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E70E49221F320020008A2CCF /* Build configuration list for PBXProject "ShadesApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E70E491E1F320020008A2CCF;
+			productRefGroup = E70E49281F320020008A2CCF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E70E49261F320020008A2CCF /* ShadesApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E70E49251F320020008A2CCF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E70E492D1F320020008A2CCF /* GameScene.sks in Resources */,
+				E70E49351F320020008A2CCF /* Assets.xcassets in Resources */,
+				E70E492F1F320020008A2CCF /* Actions.sks in Resources */,
+				E70E49381F320020008A2CCF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E78B99E41F3B3747002428A2 /* Build Haskell Code */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/../Shades.hsproj",
+			);
+			name = "Build Haskell Code";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "source \"${SOURCE_ROOT}/ShadesApp/BuildHaskell.sh\"";
+			showEnvVarsInLog = 0;
+		};
+		E7962EEB1F40474D00FD7870 /* Copy Haskell dylibs */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Haskell dylibs";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "source \"${SOURCE_ROOT}/ShadesApp/CopyHaskellDylibs.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E70E49231F320020008A2CCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E70E49331F320020008A2CCF /* ViewController.swift in Sources */,
+				E70E49311F320020008A2CCF /* GameScene.swift in Sources */,
+				E70E492B1F320020008A2CCF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E70E49361F320020008A2CCF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E70E49371F320020008A2CCF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E70E493A1F320020008A2CCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E70E493B1F320020008A2CCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		E70E493D1F320020008A2CCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = ShadesApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.justtesting.ShadesApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		E70E493E1F320020008A2CCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = ShadesApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.justtesting.ShadesApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E70E49221F320020008A2CCF /* Build configuration list for PBXProject "ShadesApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E70E493A1F320020008A2CCF /* Debug */,
+				E70E493B1F320020008A2CCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E70E493C1F320020008A2CCF /* Build configuration list for PBXNativeTarget "ShadesApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E70E493D1F320020008A2CCF /* Debug */,
+				E70E493E1F320020008A2CCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E70E491F1F320020008A2CCF /* Project object */;
+}

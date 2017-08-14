@@ -8,13 +8,13 @@ synopsis: SpriteKit sample game
 category: Games
 author: Gabriele Keller
 data-files:
-    blue1.png
-    blue4.png
+    blue3.png
     blue5.png
     blue2.png
-    blue3.png
-x-ghc-framework-version: 7.10.3-6.29-1
-x-last-ide-version: HfM1.4.0
+    blue4.png
+    blue1.png
+x-ghc-framework-version: 8.0.2-8.9-3
+x-last-ide-version: HfM1.5.1
 Executable Shades
   main-is: Shades.hs
   buildable: True
@@ -25,7 +25,7 @@ Executable Shades
       random -any
   other-modules:
       GameState
-      Constants
       Random
+      Constants
       Actions
       Convenience

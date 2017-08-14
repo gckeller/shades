@@ -1,4 +1,6 @@
-{-# LANGUAGE NamedFieldPuns, RecordWildCards #-}
+{-# LANGUAGE NamedFieldPuns, RecordWildCards, PatternGuards #-}
+
+module Shades(shades) where
 
 import Graphics.SpriteKit
 

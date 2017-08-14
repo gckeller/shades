@@ -15,12 +15,12 @@ data PhysicsCategory = Block      -- Blocks on the ground
                      | Wall       -- left and right wall
                       deriving (Enum)
 
-blocksInRow = 5
-blocksInCol = 8
+blocksInRow = 5 :: Int
+blocksInCol = 8 :: Int
 
 
-leftArrowKey  = 123
-rightArrowKey = 124
+leftArrowKey  = 123 :: Word16
+rightArrowKey = 124 :: Word16
 
 (block1Texture, blockWidth, blockHeight) = defineTexture "blue1.png"
 (block2Texture, _,          _) = defineTexture "blue2.png"
@@ -43,8 +43,8 @@ epsilon = 0.0
 -- Scene dimensions
 --
 width, height :: GFloat
-width  = blocksInRow * blockWidth
-height = blocksInCol * blockHeight
+width  = fromIntegral blocksInRow * blockWidth
+height = fromIntegral blocksInCol * blockHeight
 
 -- Background colour of the sky
 --

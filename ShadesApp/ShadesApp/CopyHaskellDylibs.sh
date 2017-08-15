@@ -22,9 +22,6 @@ for RPATH in ${RPATHS_TO_REMOVE}; do
   install_name_tool -delete_rpath "${RPATH}" "${APP_BUNDLE_FRAMEWORKS}/${MAIN_HASKELL_DYLIB}"
 done
 
-######################################## REMOVE!!!
-export PATH=/Users/chak/bin:$PATH
-
 copyDependencies() {
   local libname="$1"
   local deps=`otool -l "${APP_BUNDLE_FRAMEWORKS}/${libname}" | grep -e 'name @rpath/' | cut -d ' ' -f11`

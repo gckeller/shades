@@ -37,8 +37,6 @@ echo 'game_scene = (unsafeForeignPtrToPtr . castForeignPtr) <$> sceneToForeignPt
                                                                          >>${PROJECT_BUILD_PATH}/ForeignExport.hs
 
 # Build
-            # REMOVE!!!
-export PATH=/Users/chak/bin:$PATH
 (cd ${PROJECT_BUILD_PATH}; cabal configure --disable-library-profiling)
 (cd ${PROJECT_BUILD_PATH}; cabal build)
 

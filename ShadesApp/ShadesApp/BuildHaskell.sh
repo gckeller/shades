@@ -17,7 +17,7 @@ SCENE_VAR=shades
 echo "PROJECT_BUILD_PATH = ${PROJECT_BUILD_PATH}"
 
 # Copy HfM project to a build location
-ditto ${PROJECT_PATH} ${PROJECT_BUILD_PATH}
+ditto -v ${PROJECT_PATH} ${PROJECT_BUILD_PATH}
 
 # Patch the Cabal file to generate a library
 sed -e "s/^Executable.*$/Library/" -e "s/main-is: ${MAIN_FILE}//" ${PROJECT_PATH}/${CABAL_FILE} \
@@ -33,12 +33,25 @@ echo "import Foreign.ForeignPtr.Unsafe"                                  >>${PRO
 echo "import Graphics.SpriteKit"                                         >>${PROJECT_BUILD_PATH}/ForeignExport.hs
 echo "import ${MAIN_MODULE}"                                             >>${PROJECT_BUILD_PATH}/ForeignExport.hs
 echo "foreign export ccall game_scene :: IO (Ptr ())"                    >>${PROJECT_BUILD_PATH}/ForeignExport.hs
-echo 'game_scene = (unsafeForeignPtrToPtr . castForeignPtr) <$> sceneToForeignPtr '"${SCENE_VAR}"\
+echo 'game_scene = do { spritekit_initialise; (unsafeForeignPtrToPtr . castForeignPtr) <$> sceneToForeignPtr '"${SCENE_VAR} }"\
                                                                          >>${PROJECT_BUILD_PATH}/ForeignExport.hs
 
-# Build
-(cd ${PROJECT_BUILD_PATH}; cabal configure --disable-library-profiling)
-(cd ${PROJECT_BUILD_PATH}; cabal build)
+# Build and install build results
+PREFIX="${CONFIGURATION_TEMP_DIR}/${PROJECT_NAME}_prefix"
+APP_BUNDLE_FRAMEWORKS="${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}"
+mkdir -p ${APP_BUNDLE_FRAMEWORKS}
+APP_BUNDLE_RESOURCES="${BUILT_PRODUCTS_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"
+mkdir -p ${APP_BUNDLE_RESOURCES}
+echo "APP_BUNDLE_RESOURCES = ${APP_BUNDLE_RESOURCES}"
+ghc-pkg init ${PREFIX}/install.db
+(cd ${PROJECT_BUILD_PATH}; cabal install \
+  --prefix=${PREFIX} \
+  --dynlibdir=${APP_BUNDLE_FRAMEWORKS} \
+  --datadir=${APP_BUNDLE_RESOURCES} \
+  --datasubdir="." \
+  --package-db=${PREFIX}/install.db \
+  --disable-library-profiling \
+  --disable-documentation)
 
 # Make sure the libary gets picked up by the linker
 OBJECTS_NORMAL=${OBJECT_FILE_DIR_normal}/${NATIVE_ARCH_ACTUAL}

@@ -8,13 +8,9 @@
 
 APP_BUNDLE_FRAMEWORKS="${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}"
 
-# Copy the dylib containing our Haskell code into the app bundle
-OBJECTS_NORMAL="${OBJECT_FILE_DIR_normal}/${NATIVE_ARCH_ACTUAL}"
-MAIN_HASKELL_DYLIB_PATH=`ls "${OBJECTS_NORMAL}"/libHSShades-*.dylib`
+# Locate the dylib containing our Haskell code into the app bundle
+MAIN_HASKELL_DYLIB_PATH=`ls "${APP_BUNDLE_FRAMEWORKS}"/libHSShades-*.dylib`
 MAIN_HASKELL_DYLIB=`basename "${MAIN_HASKELL_DYLIB_PATH}"`
-mkdir -p "${APP_BUNDLE_FRAMEWORKS}"
-ditto "${MAIN_HASKELL_DYLIB_PATH}" "${APP_BUNDLE_FRAMEWORKS}"
-
 
 # Remove all unnecessary RPATHs (they can be trouble with sandboxing)
 RPATHS_TO_REMOVE=`otool -l "${APP_BUNDLE_FRAMEWORKS}/${MAIN_HASKELL_DYLIB}" | grep -e 'path.*/usr/lib/ghc' | cut -d ' ' -f11`

@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		E70E492B1F320020008A2CCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70E492A1F320020008A2CCF /* AppDelegate.swift */; };
-		E70E492D1F320020008A2CCF /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = E70E492C1F320020008A2CCF /* GameScene.sks */; };
-		E70E492F1F320020008A2CCF /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = E70E492E1F320020008A2CCF /* Actions.sks */; };
-		E70E49311F320020008A2CCF /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70E49301F320020008A2CCF /* GameScene.swift */; };
 		E70E49331F320020008A2CCF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70E49321F320020008A2CCF /* ViewController.swift */; };
 		E70E49351F320020008A2CCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E70E49341F320020008A2CCF /* Assets.xcassets */; };
 		E70E49381F320020008A2CCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E70E49361F320020008A2CCF /* Main.storyboard */; };
+		E79D18B21F65F39700CF82A6 /* HaskellSpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E70E49431F39EC6C008A2CCF /* HaskellSpriteKit.framework */; };
+		E79D18B51F65F5CB00CF82A6 /* HaskellSpriteKit.framework in Copy Embedded Frameworks */ = {isa = PBXBuildFile; fileRef = E70E49431F39EC6C008A2CCF /* HaskellSpriteKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E79D18B41F65F5AD00CF82A6 /* Copy Embedded Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E79D18B51F65F5CB00CF82A6 /* HaskellSpriteKit.framework in Copy Embedded Frameworks */,
+			);
+			name = "Copy Embedded Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E70E49271F320020008A2CCF /* ShadesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShadesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E70E492A1F320020008A2CCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E70E492C1F320020008A2CCF /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		E70E492E1F320020008A2CCF /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
-		E70E49301F320020008A2CCF /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		E70E49321F320020008A2CCF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E70E49341F320020008A2CCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E70E49371F320020008A2CCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -29,6 +39,7 @@
 		E70E49431F39EC6C008A2CCF /* HaskellSpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HaskellSpriteKit.framework; path = "/Applications/Xcode.app/Contents/Developer/../../../../Users/chak/Library/Developer/Xcode/DerivedData/HaskellSpriteKit-aapnurekzprlwrevpovflktmewse/Build/Intermediates/ArchiveIntermediates/HaskellSpriteKit/IntermediateBuildFilesPath/UninstalledProducts/macosx/HaskellSpriteKit.framework"; sourceTree = "<absolute>"; };
 		E78B99E61F3B379B002428A2 /* BuildHaskell.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = BuildHaskell.sh; sourceTree = "<group>"; };
 		E7962EEC1F405D7A00FD7870 /* CopyHaskellDylibs.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = CopyHaskellDylibs.sh; sourceTree = "<group>"; };
+		E7962EED1F43148600FD7870 /* ShadesApp-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ShadesApp-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E79D18B21F65F39700CF82A6 /* HaskellSpriteKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,9 +75,7 @@
 			children = (
 				E70E49431F39EC6C008A2CCF /* HaskellSpriteKit.framework */,
 				E70E492A1F320020008A2CCF /* AppDelegate.swift */,
-				E70E492C1F320020008A2CCF /* GameScene.sks */,
-				E70E492E1F320020008A2CCF /* Actions.sks */,
-				E70E49301F320020008A2CCF /* GameScene.swift */,
+				E7962EED1F43148600FD7870 /* ShadesApp-Bridging-Header.h */,
 				E70E49321F320020008A2CCF /* ViewController.swift */,
 				E70E49341F320020008A2CCF /* Assets.xcassets */,
 				E70E49361F320020008A2CCF /* Main.storyboard */,
@@ -96,6 +106,7 @@
 				E70E49241F320020008A2CCF /* Frameworks */,
 				E70E49251F320020008A2CCF /* Resources */,
 				E7962EEB1F40474D00FD7870 /* Copy Haskell dylibs */,
+				E79D18B41F65F5AD00CF82A6 /* Copy Embedded Frameworks */,
 			);
 			buildRules = (
 			);
@@ -145,9 +156,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E70E492D1F320020008A2CCF /* GameScene.sks in Resources */,
 				E70E49351F320020008A2CCF /* Assets.xcassets in Resources */,
-				E70E492F1F320020008A2CCF /* Actions.sks in Resources */,
 				E70E49381F320020008A2CCF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -193,7 +202,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E70E49331F320020008A2CCF /* ViewController.swift in Sources */,
-				E70E49311F320020008A2CCF /* GameScene.swift in Sources */,
 				E70E492B1F320020008A2CCF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,6 +247,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "/Users/chak/Library/Developer/Xcode/DerivedData/HaskellSpriteKit-aapnurekzprlwrevpovflktmewse/Build/Intermediates/ArchiveIntermediates/HaskellSpriteKit/IntermediateBuildFilesPath/UninstalledProducts/macosx/";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -258,6 +267,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "ShadesApp/ShadesApp-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -289,6 +299,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "/Users/chak/Library/Developer/Xcode/DerivedData/HaskellSpriteKit-aapnurekzprlwrevpovflktmewse/Build/Intermediates/ArchiveIntermediates/HaskellSpriteKit/IntermediateBuildFilesPath/UninstalledProducts/macosx/";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -300,6 +311,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "ShadesApp/ShadesApp-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
